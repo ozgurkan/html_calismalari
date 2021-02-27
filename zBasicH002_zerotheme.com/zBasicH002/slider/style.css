@@ -1,0 +1,55 @@
+@charset "utf-8";
+/* CSS Document */
+*{padding:0; margin:0; list-style:none; border:0}
+
+.slider{margin-right:10px; overflow:hidden; position:relative}
+
+.slider ul.slider_liste li{
+font-size:0;
+width:97%;
+float:left;
+
+}
+.slider ul.slider_liste li a img{
+width:97%;
+height:400px;
+}
+
+/*onceki ve sonraki*/
+a.onceki,a.sonraki{
+	width:70px;
+	height:70px;
+	text-decoration:none;
+	font:32px/70px Arial;
+	color:#fff;
+	border-radius:100px;
+	position:absolute;
+
+top=50%;
+	margin-top:-35px;
+	background:rgba(0,0,0,.5);
+	text-align:center;
+	top: 198px;
+}
+a.onceki{
+	left:36px;
+}
+a.sonraki{right:20px;}
+a.onceki:hover,a.sonraki:hover{ background:#000}
+
+
+.slider ul#buton{
+	position:absolute;
+	left: 15px;
+	top: 379px;
+	
+}
+.slider ul#buton li{ float:left; font-size:18px; background-color:#000000}
+.slider ul#buton li a{ display:block; padding:3px 15px; color:#FFFFFF;}
+.slider ul#buton li a:hover{ color:#FF0000}
+.slider ul#buton li.aktif a{ background-color:#00FF00; font-weight:bold; color:#FF0000}
+
+
+/*küçük sliderlar slider*/
+.kücük_slider{ width:210px; height:210px; overflow:hidden}
+

@@ -1,0 +1,14 @@
+ul#menu{list-style:none;padding:0;margin:0;background-color:#333;height:40px;font:12px tahoma;width:970px;border-bottom:5px solid #900;}
+ul#menu li{float:left}
+ul#menu li a{line-height:40px;color:#fff;text-decoration:none;padding:0 20px;display:block;transition:background-color 1s;
+-webkit-transition:background-color 1s;-moz:background-color 1s;}
+
+
+ul#menu li a:hover{background-color:#900;}
+
+ul#menu li.acilir ul.drop{position:absolute;list-style:none;padding:0;margin:0;display:none;}
+ul#menu li.acilir ul.drop li{float:none}
+ul#menu li.acilir ul.drop li a{width:200px;background-color:#900;border-bottom:1px dotted #c03;}
+ul#menu li.acilir ul.drop li a:hover{background-color:#c03;color:#fff}
+
+.aktif{background-color:#900;}

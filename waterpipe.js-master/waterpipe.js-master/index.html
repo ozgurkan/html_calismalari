@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="tr">
+
+<head>
+<meta charset="UTF-8">
+
+<script src="lib/modernizr-2.7.2.js"></script>
+
+<title>Smoky Backgrounds Generator - waterpipe.js</title>
+<link rel="stylesheet" href="css/colpick.css">
+<link rel="stylesheet" href="css/jquery.nouislider.css">
+<link rel="stylesheet" href="css/style.css">
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.7.2.min.js"></script>
+  <script type="text/javascript">
+        $(function(){
+             $("#menü").click(function(){
+			 alert("q123");
+			 $('.box').transition({ x: '0px', y: '-40px' });
+			 
+			 });
+			
+			
+			 $.goster=function(){
+				$('#wavybg-wrapper canvas').css({'width' : '0px'});			 
+				$('#wavybg-wrapper canvas').css({'height' : '0px'});
+				$('#wavybg-wrapper').css({'width' : '0px'});			 
+				$('#wavybg-wrapper').css({'height' : '0px'});
+				$('#header').css({'height' : '3255px'});
+				
+			}
+			 var ac=setInterval('$.goster()',9000);
+			
+        });
+		
+     </script>
+</head>
+<body style="margin:0px;padding:0px">
+
+
+<div id="wavybg-wrapper" style="height: 100%;"> 
+    <canvas>Your browser does not support HTML5 canvas.</canvas>
+	
+</div>
+<div id="container" style="margin:0px;padding:0px;background: rgba(232,74,46,1);
+
+background: -moz-linear-gradient(-45deg, rgba(232,74,46,1) 0%, rgba(255,242,99,1) 100%);
+
+background: -webkit-gradient(left top, right bottom, color-stop(0%, rgba(232,74,46,1)), color-stop(100%, rgba(255,242,99,1)));
+
+background: -webkit-linear-gradient(-45deg, rgba(232,74,46,1) 0%, rgba(255,242,99,1) 100%);
+
+background: -o-linear-gradient(-45deg, rgba(232,74,46,1) 0%, rgba(255,242,99,1) 100%);
+
+background: -ms-linear-gradient(-45deg, rgba(232,74,46,1) 0%, rgba(255,242,99,1) 100%);
+
+background: linear-gradient(135deg, rgba(232,74,46,1) 0%, rgba(255,242,99,1) 100%);
+
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e84a2e', endColorstr='#fff263', GradientType=1 );">
+<header id="header" style="z-index:999;width:1100px;height:0px;background-color:white;margin: 0 auto;transition: all 5s ease-in-out;overflow:hidden">
+<h2 style="margin:0;padding:0">deneme</h2>
+<nav style="width:200px;height:200px;border-radius: 200px 200px 0px 200px;background-color:yellow;
+
+-moz-border-radius: 200px 200px 0px 200px;
+
+-webkit-border-radius: 200px 200px 0px 200px;
+
+border: 0px solid #000000;"></nav>
+    
+</header>
+<div id="menü" style="width:50px;height:50px;background-color:green">
+	<div class="box1" style="width:50px;height:50px;background-color:red;visibility:hidden;"></div>
+	</div>
+</div>
+
+<script src="lib/jquery-1.11.0.min.js"></script>
+<script src="lib/builder_scripts.js"></script>
+<script src="waterpipe.js"></script>
+
+</body>
+</html>
