@@ -1,0 +1,28 @@
+@charset "utf-8";
+/* CSS Document */
+*{
+margin:0;
+padding:0;
+border:0;
+font:12px Arial;
+}
+
+a{text-decoration:none}
+ul{list-style:none}
+#geri{width:40px;height:100px;float:left}
+#geri img{width:40px;height:100px;border-bottom-left-radius: 50px;border-top-left-radius: 50px;}
+#ileri{width:40px;height:100px;float:left;left:1369px;top: 560px;margin-left:10px;}
+#ileri img{width:40px;height:100px;border-bottom-right-radius: 50px;border-top-right-radius:50px;}
+	
+	
+	
+	
+	
+
+
+
+#alt_slider{width:850px;height:100px;float:left;overflow:hidden;}
+.alt_slider{overflow:hidden;width:850px;height:100px;}
+.alt_slider ul {width:850px;height:100px;overflow:hidden;}
+.alt_slider ul li{width:160px;height:100px;float:left;margin-left:10px;background-color:#FFFFFF;}
+.alt_slider img{width:160px;height:100px;border-radius:5px;}

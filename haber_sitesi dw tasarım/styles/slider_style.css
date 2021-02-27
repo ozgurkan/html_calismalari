@@ -1,0 +1,70 @@
+*{
+margin:0;
+padding:0;
+border:0;
+font:12px Arial;
+}
+a{text-decoration:none}
+ul{list-style:none}
+
+/*slider*/
+#slider{margin:30px;padding-top:6px;width:400px;height:290px;position:relative;}
+.slider{overflow:hidden;border-radius: 100px;border-radius: 30px;border-bottom-left-radius: 48px;border-bottom-right-radius: 48px;width:400px;height: 290px}
+.slider ul {overflow:hidden;}
+.slider ul li{width:400px;height:290px;float:left}
+.slider img{width:400px;height:290px;}
+
+.sliderButon {;
+	position:absolute;
+	bottom:10px;
+	left:10px;
+	height: 287px;
+}
+.sliderButon a{
+text-align:center;
+font-weight:bold;
+display:block;
+padding:3px 7px; 
+margin-left:4px;
+margin-top:3px;
+margin-bottom:3px;
+background:#fff;
+color:#333;
+border-radius:3px;
+}
+
+
+.sayfa{
+	width:90px;
+	height:110px;
+	position:absolute;
+	left:427px;
+	top:0px;
+}
+
+.sayfa a{
+width:10px;
+height:15px;
+text-align:center;
+font-weight:bold;
+display:block;
+padding:3px 7px; 
+margin-left:4px;
+margin-top:3px;
+margin-bottom:3px;
+background:#fff;
+color:#000000;
+border-radius:3px;
+font-weight: bold;
+float:left;
+
+}
+.sayfa a aktif, .sayfa a:hover,.sliderButon a:hover{
+background:red;
+color:#fff;
+}
+
+
+
+#onceki{float:left;color: #000000; font-weight: bold;margin-top:150px;}
+#sonraki{float:right;color: #000000; font-weight: bold;margin-left:250px;margin-top:150px;}

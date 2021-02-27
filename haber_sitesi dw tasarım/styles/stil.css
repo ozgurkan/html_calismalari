@@ -1,0 +1,236 @@
+﻿body{
+margin: 0px;
+padding: 0px;
+background-color:#CCCCCC
+}
+.temizle{clear:both;}
+
+a{text-decoration:none}
+
+#dis_alan {
+	height: auto;
+	width: 970px;
+	margin-right: auto;
+	margin-left: auto;
+}
+
+
+#banner
+{
+    width: 970px;
+    height: 68px;
+    background-image: url(../images/bg_banner1.png);
+}
+#banner_sol {
+	width: 320px;
+	height: 45px;
+	float: left;
+	margin-top: 2px;
+}
+#banner_sol img{
+width:65px;
+height:45px;
+}
+#banner_orta {
+	height: 45px;
+	width: 350px;
+	float: left;
+	margin-top: 2px;
+}
+#banner_sag {
+	height: 45px;
+	width: 300px;
+	float: left;
+	background-repeat: no-repeat;
+	background-position: center;
+	margin-top: 2px;
+}
+#banner_sag img{
+float:right;
+width:132px;
+height:46px;
+}
+
+
+#kullanici_alani {
+	height: 85px;
+	width: 970px;
+	background-color:#CCCCCC
+}
+#kullanici_sol{
+    margin-top:2px;
+	margin-bottom:2px;
+	height: 80px;
+	width: 320px;
+	float: left;
+}
+#kullanici_sol img{
+   width:320;
+   height:80;
+}
+#kullanici_orta {
+	margin-top:2px;
+	margin-bottom:2px;
+	float: left;
+	height: 80px;
+	width: 350px;
+}
+#ara{
+	margin-left:25px;
+	margin-right:25px;
+	width: 280px;
+	height: 60px;
+	padding: 20px 0px 0px 0px;
+}
+
+#ara form {
+	height: 41px;
+	margin: 0;
+	padding: 10px 0 0 0px;
+}
+
+#ara fieldset {
+	margin: 0;
+	padding: 0;
+	border: none;
+}
+
+#ara-text {
+	width: 165px;
+	height: 17px;
+	margin-right: 5px;
+	padding: 6px 5px 3px 5px;
+	border: 1px solid #A8A8A8;
+	background: #FFFFFF;
+	text-transform: lowercase;
+	font: normal 11px Arial, Helvetica, sans-serif;
+}
+
+#ara-submit {
+	width: 51px;
+	height: 26px;
+	border: none;
+	background: url(../images/ara.jpg) no-repeat left top;
+	color: #FFFFFF;
+}
+#kullanici_sag {
+    margin-top:2px;
+	margin-bottom:2px;
+	float: left;
+	height: 80px;
+	width: 300px;
+}
+#giris{
+    margin-left:10px;
+	margin-right:10px;
+	width: 280px;
+	height: 80px;
+	padding:0px;
+}
+#giris form {
+	height: 41px;
+	margin: 0;
+	padding: 0px;
+}
+
+#giris fieldset {
+	margin: 0;
+	padding: 0;
+	border: none;
+}
+
+#giris-text {
+	width: 165px;
+	height: 15px;
+	
+	border: 1px solid #A8A8A8;
+	background: #FFFFFF;
+	text-transform: lowercase;
+	font: normal 11px Arial, Helvetica, sans-serif;
+}
+
+#giris-submit {
+	width: 51px;
+	height: 26px;
+	border: none;
+	background: url(../images/ara.jpg) no-repeat left top;
+	color: #FFFFFF;
+}
+
+
+
+ 
+ 
+ #orta_alan
+{
+    background-image: url(../images/bg_ortaalan.png);
+    height: 900px;
+    width: 970px;
+}
+ 
+ #slider_alani
+{
+    height: 350px;
+    width: 550px;
+    margin-left: 5px;
+    margin-right:5px;
+	margin-bottom:5px;
+	float: left;
+	background-image:url(../images/televizyon1.png)
+}
+#sag_alan {
+	float:left;
+	height: 350px;
+	width:400px;
+	background-color: #00CC66;
+	margin-right:5px;
+	margin-bottom:5px;
+	
+}
+#orta_alan_orta{
+width:950px;
+height:100px;
+margin-left:10px;
+margin-right:10px;
+
+}
+
+#orta_alan_alt_sol{
+width:700px;
+height:300px;
+margin-bottom:5px;
+margin-top:5px;
+margin-left:10px;
+margin-right:10px;
+background-color:#FFFF00;
+float:left;
+}
+#orta_alan_alt_sag{
+width:240px;
+height:300px;
+margin-bottom:5px;
+margin-top:5px;
+margin-right:10px;
+background-color:#FFFF00;
+float:left
+}
+
+#footer_alani {
+	height: 40px;
+	width: 970px;
+	background-image: url(../images/bg_alt.png);
+	background-repeat:no-repeat;
+	padding-top:15px;
+	text-align: center;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 16px;
+	font-weight: bold;
+}
+#footer_alani a:link{
+font-size:15px;
+font-family:"Times New Roman", Times, serif;
+font-style:italic;
+font-weight:bold;
+color:#0000FF
+}
+

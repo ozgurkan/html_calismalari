@@ -1,0 +1,214 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>HABERSİZLER</title>
+ <link href="styles/stil.css" rel="stylesheet" type="text/css" /><!--web sitesi genel stilleri-->
+ 
+ <link rel="stylesheet"  type="text/css" href="styles/slider_style.css"/><!--slider stilleri-->
+	<script type="text/javascript" src="http://code.jquery.com/jquery-1.7.2.min.js"></script>
+	<script type="text/javascript" src="http://ajax.gooleapis.com/ajax/libs/1.7.2/jquery.min.js"></script>
+	<script type="text/javascript" src="includes/slider_js.js"></script><!--slider javascript kodları-->
+    
+    <link rel="stylesheet"  type="text/css" href="styles/acilir_menu.css"/><!--acilir_menu stilleri-->
+    <script type="text/javascript" src="includes/acilir_menu.js"></script><!--acilir_menu javascript kodları-->
+    
+    
+    <link rel="stylesheet"  type="text/css" href="styles/alt_slider.css"/><!--alt_slider stilleri-->
+    <script type="text/javascript" src="includes/alt_slider.js"></script><!--alt_slider javascript kodları-->
+    
+ <script type="text/javascript">
+<!--
+function MM_swapImgRestore() { //v3.0
+  var i,x,a=document.MM_sr; for(i=0;a&&i<a.length&&(x=a[i])&&x.oSrc;i++) x.src=x.oSrc;
+}
+function MM_preloadImages() { //v3.0
+  var d=document; if(d.images){ if(!d.MM_p) d.MM_p=new Array();
+    var i,j=d.MM_p.length,a=MM_preloadImages.arguments; for(i=0; i<a.length; i++)
+    if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];}}
+}
+
+function MM_findObj(n, d) { //v4.01
+  var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
+    d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
+  if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
+  for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=MM_findObj(n,d.layers[i].document);
+  if(!x && d.getElementById) x=d.getElementById(n); return x;
+}
+
+function MM_swapImage() { //v3.0
+  var i,j=0,x,a=MM_swapImage.arguments; document.MM_sr=new Array; for(i=0;i<(a.length-2);i+=3)
+   if ((x=MM_findObj(a[i]))!=null){document.MM_sr[j++]=x; if(!x.oSrc) x.oSrc=x.src; x.src=a[i+2];}
+}
+//-->
+</script>
+</head>
+
+<body onload="MM_preloadImages('images/face1.png','images/twiter1.png','images/yahoo1.png','images/google1.png','images/uye_ol1.png','images/logo_yazi1.png','images/geri1.png','images/ileri1.png')">
+<div id="dis_alan">
+<div id="banner">
+    <div id="banner_sol">
+       <a href="#" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('Image1','','images/face1.png',1)"><img src="images/face.png" name="Image1"  border="0" id="Image1" /></a>
+       <a href="#" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('Image2','','images/twiter1.png',1)"><img src="images/twiter.png" name="Image2" border="0" id="Image2" /></a>
+       <a href="#" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('Image3','','images/yahoo1.png',1)"><img src="images/yahoo.png" name="Image3"  border="0" id="Image3" /></a>
+       <a href="#" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('Image4','','images/google1.png',1)"><img src="images/google.png" name="Image4" border="0" id="Image4" /></a>
+    </div><!--banner_sol divi bitti-->
+    <div id="banner_orta"></div><!--banner_orta divi bitti-->
+    <div id="banner_sag">
+    <a href="uye_ol.aspx" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('Image5','','images/uye_ol1.png',1)"><img src="images/uye_ol.png" name="Image5"  border="0" id="Image5" /></a>
+    </div><!--banner_sag divi bitti-->
+   
+</div><!--banner bitti-->
+
+<div class="temizle"></div>
+
+
+<div id="kullanici_alani">
+     <div id="kullanici_sol">
+        <a href="#" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('Image6','','images/logo_yazi1.png',1)"><img src="images/logo_yazi.png" name="Image6"  border="0" id="Image6" /></a>
+     </div><!--kullanici_sol bitti-->
+     <div id="kullanici_orta">
+                         <div id="ara" >
+								<form method="get" action="#">
+									<div>
+										<input type="text" name="ara" id="ara-text" value="" />
+										<input type="submit" id="ara-submit" value="ARA" />
+									</div>
+								</form>
+						</div>
+     </div><!--kullanici_orta bitti-->
+     <div id="kullanici_sag">
+                    <div id="giris" >
+                      <table width="280" height="73" border="0">
+                        <tr>
+                          <td width="78" height="31">E-mail:</td>
+                          <td width="135"><input type="text" name="e-mail" id="giris-text" value="" /></td>
+                          <td width="53" rowspan="2"><input type="submit" id="giris-submit" value="GİRİŞ"  /></td>
+                        </tr>
+                        <tr>
+                          <td>Şifre:</td>
+                          <td><input type="password" name="sifre" id="giris-text" value="" /></td>
+                         
+                        </tr>
+                      </table>
+	                </div>
+     
+     </div><!--kullanici_sag bitti-->
+
+</div><!--kullanici_alani divi bitti-->
+
+
+<div class="temizle"></div>
+
+<ul id="menu">
+           <li><a href="#">Anasayfa</a></li>
+		   <li class="acilir"><a href="spor.html">Spor</a>
+		      <ul class="drop">
+			     <li><a href="#">Futbol</a></li>
+			     <li><a href="#">Basketbol</a></li>
+				 <li><a href="#">Tenis</a></li>
+			  </ul>
+		   </li>
+		   <li><a href="#">Magazin</a></li>
+		   <li class="acilir"><a href="#">Ekonomi</a>
+		        <ul class="drop">
+			     <li><a href="#">Altın</a></li>
+			     <li><a href="#">Dolar</a></li>
+			    </ul>
+		   
+		   </li>
+		   <li><a href="#">Teknoloji</a></li>
+		   <li><a href="#">Oyun</a></li>
+		
+		</ul>
+<div class="temizle"></div>
+
+<div id="orta_alan">
+<div id="slider_alani">
+<div id="slider">
+   <div class="slider">
+      <ul>
+	      <li><a href="#"><img src="slider_images/resim1.jpg" alt=""  /></a></li>
+          <li><a href="#"><img src="slider_images/resim2.jpg" alt=""  /></a></li>   
+		  <li><a href="#"><img src="slider_images/resim3.jpg" alt="" /></a></li>  
+          <li><a href="#"><img src="slider_images/resim4.jpg" alt=""  /></a></li>  
+		  <li><a href="#"><img src="slider_images/resim5.jpg" alt=""  /></a></li>
+          <li><a href="#"><img src="slider_images/resim6.jpg" alt=""  /></a></li>  
+          <li><a href="#"><img src="slider_images/resim7.jpg" alt=""  /></a></li>
+	      <li><a href="#"><img src="slider_images/resim8.jpg" alt=""  /></a></li>  
+		  <li><a href="#"><img src="slider_images/resim9.jpg" alt=""  /></a></li>
+          <li><a href="#"><img src="slider_images/resim10.jpg" alt="" /></a></li>  
+         
+	  
+	  </ul>
+    </div>
+	<div class="sliderButon">
+	<a href="#" id="onceki">Önceki</a>
+	<a href="#" id="sonraki">Sonraki</a>	</div>
+	
+	
+	<div class="sayfa">
+	<a href="#">1</a>
+	<a href="#">2</a>
+	<a href="#">3</a>
+	<a href="#">4</a>
+	<a href="#">5</a>
+	<a href="#">6</a>
+	<a href="#">7</a>
+	<a href="#">8</a>
+	<a href="#">9</a>
+	<a href="#">10</a>	</div>
+   </div>
+</div><!--slider_alani bitti-->
+
+<div id="sag_alan"></div>
+<div class="temizle"></div>
+
+
+<div id="orta_alan_orta">
+       <div id="geri">
+          <a href="#" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('Image37','','images/geri1.png',1)"><img src="images/geri.PNG" name="Image37" border="0" id="Image37" /></a>
+       </div>
+    
+       <div id="alt_slider">
+            <div class="alt_slider">
+              <ul>
+               <li><a href="#"><img src="slider_images/resim1.jpg" alt=""  /></a></li>
+               <li><a href="#"><img src="slider_images/resim2.jpg" alt=""  /></a></li>
+               <li><a href="#"><img src="slider_images/resim3.jpg" alt=""  /></a></li>
+               <li><a href="#"><img src="slider_images/resim4.jpg" alt=""  /></a></li>
+               <li><a href="#"><img src="slider_images/resim5.jpg" alt=""  /></a></li>
+               <li><a href="#"><img src="slider_images/resim6.jpg" alt=""  /></a></li>
+               <li><a href="#"><img src="slider_images/resim7.jpg" alt=""  /></a></li>
+               <li><a href="#"><img src="slider_images/resim8.jpg" alt=""  /></a></li>
+               <li><a href="#"><img src="slider_images/resim9.jpg" alt=""  /></a></li>
+               <li><a href="#"><img src="slider_images/resim10.jpg" alt=""  /></a></li>
+             </ul>
+           </div>
+       </div>
+              
+       <div id="ileri">
+          <a href="#" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('Image38','','images/ileri1.png',1)"><img src="images/ileri.PNG" name="Image38"  border="0" id="Image38" /></a>
+       </div>
+</div>
+
+<div class="temizle"></div>
+
+<div id="orta_alan_alt_sol"></div>
+<div id="orta_alan_alt_sag"></div>
+<div class="temizle"></div>
+
+
+
+
+
+</div><!--orta_alan bitti-->
+
+<div class="temizle"></div>
+
+<div id="footer_alani">Copyright © 2013<a href="#">Habersizler.com</a> |Tasarlayan by <a href=mailto:"galatasaray_ozgur_94@hotmail.com">Özgür Kan</a></div><!--footer_alani bitti-->
+
+
+</div><!--dis_alan bitti-->
+</body>
+</html>
