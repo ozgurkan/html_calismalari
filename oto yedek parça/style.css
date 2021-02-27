@@ -1,0 +1,75 @@
+@charset "utf-8";
+/* CSS Document */
+
+
+body{padding:0;margin:0}
+#container{width:1200px; height:auto; background-color:#999999;margin:0px auto}
+
+#header{background-color:#CC3333; width:1200px; height:150px; border-top:10px solid #990000;}
+#left{float:left;width:300px; height:100px; padding:10px 50px;}
+
+#right{float:right;width:800px; height:150px;}
+#navigation{style=width:700px; height:50px;margin:90px 20px}
+#navigation ul{list-style:none;}
+#navigation ul li{float:left;width:auto;margin:10px;}
+#navigation ul li a{ text-decoration:none; font-size:20px; color:#000000; font-family:Arial, Helvetica, sans-serif}
+#navigation ul li a:hover{ text-decoration:none; font-size:25px; color:#333333}
+	
+	
+	
+	
+
+
+
+#section{clear:both;background-color:#003399; width:900px; height:1200px; margin:5px 150px 10px 150px;}
+
+
+#hakkımızda{
+	margin:5px 0px 0px 5px;
+	float:left;
+	background-color:#CC3333;
+	width:440px;
+	height:350px;
+	opacity:0.9;
+	border-top-right-radius: 100px;
+	border-top-left-radius: 25px;
+	border-bottom-left-radius: 100px;
+	border-bottom-right-radius: 25px;
+	-moz-border-top-right-radius: 100px;
+	-moz-border-top-left-radius: 25px;
+	-moz-border-bottom-left-radius: 100px;
+	-moz-border-bottom-right-radius: 25px;
+	-webkit-border-top-right-radius: 100px;
+	-webkit-border-top-left-radius: 25px;
+	-webkit-border-bottom-left-radius: 100px;
+	-webkit-border-bottom-right-radius: 25px;
+}
+#hakkımızda article h3{text-align:center; font:"Times New Roman", Times, serif; font-size:24px; font-weight:bold}
+#hakkımızda article p{margin-left:20px;align:center;text-indent:20px; font-size:16px; font-weight:bold; width:400px; height:300px}
+
+
+
+
+#vizyonumuz{
+    margin:340px 0px 0px 0px;
+	float:left;
+	background-color:#33CC33;
+	width:440px;
+	height:350px;
+	opacity:0.9;
+	border-top-right-radius: 100px;
+	border-top-left-radius: 25px;
+	border-bottom-left-radius: 100px;
+	border-bottom-right-radius: 25px;
+	-moz-border-top-right-radius: 100px;
+	-moz-border-top-left-radius: 25px;
+	-moz-border-bottom-left-radius: 100px;
+	-moz-border-bottom-right-radius: 25px;
+	-webkit-border-top-right-radius: 100px;
+	-webkit-border-top-left-radius: 25px;
+	-webkit-border-bottom-left-radius: 100px;
+	-webkit-border-bottom-right-radius: 25px;
+}
+#vizyonumuz article h3{text-align:center; font:"Times New Roman", Times, serif; font-size:24px; font-weight:bold}
+#vizyonumuz article p{margin-left:20px;align:center;text-indent:20px; font-size:16px; font-weight:bold; width:400px; height:300px}
+

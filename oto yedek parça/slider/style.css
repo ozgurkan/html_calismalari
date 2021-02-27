@@ -1,0 +1,72 @@
+*{
+margin:0;
+padding:0;
+border:0;
+font:12px Arial;
+}
+a{text-decoration:none}
+ul{list-style:none}
+
+/*slider*/
+#slider{width:900px;position:relative; clear:both}
+.slider{width:900px;height:450px;overflow:hidden;}
+.slider ul {overflow:hidden;}
+.slider ul li{width:900px;height:450px;float:left}
+
+.sliderButon {
+	position:absolute;
+	left:20px;
+	height:auto;
+	top: 183px;
+	width: 868px;
+}
+.sliderButon a{
+text-align:center;
+font-weight:bold;
+display:block;
+
+padding:3px 7px; 
+margin-left:4px;
+margin-top:3px;
+margin-bottom:3px;
+background:#fff;
+color:#333;
+border-radius:3px;
+}
+#sonraki{float:right;margin-left:350px;margin-bottom:110px;}
+#onceki{float:left;}
+
+
+.sayfa{
+	width:auto;
+	height:auto;
+	position:absolute;
+	left:807px;
+	top:418px;
+}
+
+.sayfa a{
+width:0px;
+height:7px;
+text-align:center;
+font-weight:bold;
+display:block;
+float:center;
+padding:3px 7px; 
+margin-left:4px;
+margin-top:3px;
+margin-bottom:3px;
+background:#fff;
+border-radius:500px;
+float:left
+}
+.sayfa a aktif,.sliderButon a:hover{
+background:red;
+color:#fff;
+}
+.sayfa a:hover:hover{
+width:2px;
+height:10px;
+background:red;
+color:#fff;
+}
