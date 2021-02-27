@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Page to be Shared.</title>
+<script type="text/javascript" src="js/jquery-1.10.2.min.js"></script>
+
+<script type="text/javascript">
+$(document).ready(function() {
+	var pageTitle = document.title; //HTML page title
+	var pageUrl = location.href; //Location of the page
+
+	
+	//user hovers on the share button	
+	$('#share-wrapper li').hover(function() {
+		var hoverEl = $(this); //get element
+		
+		//browsers with width > 699 get button slide effect
+		if($(window).width() > 699) { 
+			if (hoverEl.hasClass('visible')){
+				hoverEl.animate({"margin-left":"-117px"}, "fast").removeClass('visible');
+			} else {
+				hoverEl.animate({"margin-left":"0px"}, "fast").addClass('visible');
+			}
+		}
+	});
+		
+	//user clicks on a share button
+	$('.button-wrap').click(function(event) {
+			var shareName = $(this).attr('class').split(' ')[0]; //get the first class name of clicked element
+			
+			switch (shareName) //switch to different links based on different social name
+			{
+				case 'facebook':
+					var openLink = 'https://www.facebook.com/sharer/sharer.php?u=' + encodeURIComponent(pageUrl) + '&amp;title=' + encodeURIComponent(pageTitle);
+					break;
+				case 'twitter':
+					var openLink = 'http://twitter.com/home?status=' + encodeURIComponent(pageTitle + ' ' + pageUrl);
+					break;
+				case 'digg':
+					var openLink = 'http://www.digg.com/submit?phase=2&amp;url=' + encodeURIComponent(pageUrl) + '&amp;title=' + encodeURIComponent(pageTitle);
+					break;
+				case 'stumbleupon':
+					var openLink = 'http://www.stumbleupon.com/submit?url=' + encodeURIComponent(pageUrl) + '&amp;title=' + encodeURIComponent(pageTitle);
+					break;
+				case 'delicious':
+					var openLink = 'http://del.icio.us/post?url=' + encodeURIComponent(pageUrl) + '&amp;title=' + encodeURIComponent(pageTitle);
+					break;
+				case 'google':
+					var openLink = 'https://plus.google.com/share?url=' + encodeURIComponent(pageUrl) + '&amp;title=' + encodeURIComponent(pageTitle);
+					break;
+				case 'email':
+					var openLink = 'mailto:?subject=' + pageTitle + '&body=Found this useful link for you : ' + pageUrl;
+					break;
+			}
+		
+		//Parameters for the Popup window
+		winWidth 	= 650;	
+		winHeight	= 450;
+		winLeft   	= ($(window).width()  - winWidth)  / 2,
+		winTop    	= ($(window).height() - winHeight) / 2,	
+		winOptions   = 'width='  + winWidth  + ',height=' + winHeight + ',top='    + winTop    + ',left='   + winLeft;
+		
+		//open Popup window and redirect user to share website.
+		window.open(openLink,'Share This Link',winOptions);
+		return false;
+	});
+});
+</script>
+
+<style type="text/css">
+<!--
+body {
+	margin-left: 0px;
+	margin-top: 0px;
+	margin-right: 0px;
+	margin-bottom: 0px;
+	font-family: Georgia, "Times New Roman", Times, serif;
+	color: #333333;
+	background: #FFFFFF;
+}
+.wrapper {
+	max-width: 800px;
+	margin-right: auto;
+	margin-left: auto;
+	background: #F5F5F5;
+	padding: 20px;
+}
+
+
+/* Share button */
+
+/* outer wrapper */
+#share-wrapper {
+	margin-top: 100px;
+	position:fixed;
+	left: 0;
+}
+
+/* inner wrapper */
+#share-wrapper ul.share-inner-wrp{
+	list-style: none;
+	margin: 0px;
+	padding: 0px;
+}
+
+/* the list */
+#share-wrapper li.button-wrap {
+	background: #E4EFF0;
+	padding: 0px 0px 0px 10px;
+	display: block;
+	width: 140px;
+	margin: 0px 0px 1px -117px;
+}
+
+/* share link */
+#share-wrapper li.button-wrap > a {
+	padding-right: 60px;
+	height: 32px;
+	display: block;
+	line-height: 32px;
+	font-weight: bold;
+	color: #444;
+	text-decoration: none;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 14px;
+}
+
+/* background image for each link */
+#share-wrapper .facebook > a{
+	background: url(buttons/facebook.jpg) no-repeat right;
+}
+#share-wrapper .twitter > a{
+	background: url(buttons/twitter.jpg) no-repeat right;
+}
+#share-wrapper .digg > a{
+	background: url(buttons/digg.jpg) no-repeat right;
+}
+.stumbleupon > a{
+	background: url(buttons/stumbleupon.jpg) no-repeat right;
+}
+#share-wrapper .delicious > a{
+	background: url(buttons/delicious.jpg) no-repeat right;
+}
+#share-wrapper .google > a{
+	background: url(buttons/google.jpg) no-repeat right;
+}
+#share-wrapper .email > a{
+	background: url(buttons/email.jpg) no-repeat right;
+}
+
+/* small screen */
+@media all and (max-width: 699px) {
+	#share-wrapper {
+		bottom: 0;
+		position: fixed;
+		padding: 5px 5px 0px 5px;
+		background: #EBEBEB;
+		width: 100%;
+		margin: 0px;
+		-webkit-box-shadow: 0 -1px 4px rgba(0, 0, 0, 0.15);
+		-moz-box-shadow: 0 -1px 4px rgba(0,0,0,0.15);
+		-o-box-shadow: 0 -1px 4px rgba(0,0,0,0.15);
+		box-shadow: 0 -1px 4px rgba(0, 0, 0, 0.15);
+	}
+	#share-wrapper ul.share-inner-wrp {
+		list-style: none;
+		margin: 0px auto;
+		padding: 0px;
+		text-align: center;
+		overflow: auto;
+	}
+	#share-wrapper li.button-wrap {
+		display: inline-block;
+		width: 32px!important;
+		margin: 0px;
+		padding: 0px;
+		margin-left:0px!important;
+	}
+	#share-wrapper li.button-wrap > a {
+		height: 32px;
+		display: inline-block;
+		text-indent: -10000px;
+		width: 32px;
+		padding-right: 0;
+		float: left;
+	}
+}
+
+-->
+</style>
+</head>
+
+<body>
+<div id="share-wrapper">
+    <ul class="share-inner-wrp">
+        <!-- Facebook -->
+        <li class="facebook button-wrap"><a href="#">Facebook</a></li>
+        
+        <!-- Twitter -->
+        <li class="twitter button-wrap"><a href="#">Tweet</a></li>
+        
+         <!-- Digg -->
+        <li class="digg button-wrap"><a href="#">Digg it</a></li>
+        
+        <!-- Stumbleupon -->
+        <li class="stumbleupon button-wrap"><a href="#">Stumbleupon</a></li>
+      
+         <!-- Delicious -->
+        <li class="delicious button-wrap"><a href="#">Delicious</a></li>
+        
+        <!-- Google -->
+        <li class="google button-wrap"><a href="#">Plus Share</a></li>
+        
+        <!-- Email -->
+        <li class="email button-wrap"><a href="#">Email</a></li>
+    </ul>
+</div>
+
+<div class="wrapper">
+<h1>Share Button Example</h1>
+<p>This the example of custom (responsive) share buttons for your website. The Share buttons should automatically adjust according to the screen size of the device.
+  </p>
+  <p>
+  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum commodo nibh a metus tempor fringilla. Suspendisse sagittis arcu sed ultricies faucibus. Vivamus et pulvinar erat. Praesent a tempus purus, ac viverra augue. Morbi ac elit non justo tempus porta sit amet sit amet lectus. Vestibulum vulputate diam nibh, a sodales dolor tempor eu. Sed elementum neque vitae egestas consectetur. Sed in metus vel justo rhoncus lobortis vitae et neque. </p>
+  <p>Vivamus id quam et neque tincidunt aliquam. Donec lacus ante, commodo sed laoreet sodales, ultrices pulvinar erat. Suspendisse condimentum scelerisque lorem, id fringilla massa. Quisque lacinia arcu vitae tortor vehicula tristique.
+    
+    Cras in viverra massa, tincidunt luctus felis. Vivamus augue lectus, facilisis a elit nec, hendrerit egestas mauris. Pellentesque justo sapien, vehicula aliquet egestas a, consectetur ut lacus. Integer eget augue vitae nisl luctus vehicula. Proin lectus massa, luctus eu nisl at, laoreet faucibus neque. Fusce quis ultrices libero. Praesent id metus sed mi tristique dapibus. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean faucibus lacinia luctus. Aliquam sodales egestas mauris, sed congue sem viverra eget. </p>
+  <p>Aenean scelerisque luctus tellus at dapibus. Fusce metus orci, viverra mattis egestas eget, eleifend sit amet arcu.
+    
+    Quisque tempor, dolor feugiat ultricies rhoncus, ipsum odio hendrerit sem, congue rhoncus dui mauris id turpis. Etiam blandit, nisl vel suscipit sodales, justo nisi tempus risus, sit amet venenatis turpis ante sed metus. Nulla gravida tellus et libero viverra, auctor vehicula leo laoreet. Nunc vestibulum scelerisque ipsum ac adipiscing. </p>
+  <p>Praesent gravida neque dolor, nec lobortis augue molestie id. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Ut eget velit nulla. Phasellus volutpat vitae metus sed accumsan. Nunc quis malesuada massa. Ut ipsum risus, cursus ut pulvinar eu, facilisis at elit. Sed eu semper nisi. Curabitur vitae urna hendrerit, tincidunt ligula nec, varius neque. Proin scelerisque dictum urna, vitae pellentesque mauris venenatis eget. Donec sodales dui ut augue facilisis pretium.
+    
+    Etiam porta, elit a dignissim vestibulum, augue arcu lacinia purus, id gravida nisi massa sed est. Mauris ac hendrerit libero. In tempor felis lacus, in gravida purus vehicula scelerisque. Cras semper ante viverra, suscipit lorem et, gravida ante. </p>
+  <p>Pellentesque vehicula vel nibh ullamcorper bibendum. Proin porttitor congue purus, sit amet facilisis sapien euismod quis. Vestibulum et imperdiet orci. Maecenas quis dignissim nibh, volutpat convallis nibh. Integer eget porta ligula. Nam dictum eros in fringilla convallis. Sed lacinia ipsum quis quam malesuada, ut blandit nunc mattis.
+    
+    Sed non vulputate arcu. Integer volutpat mauris sit amet justo bibendum cursus. Suspendisse malesuada mauris eu tortor aliquet mollis. </p>
+  <p>Sed tristique eros at tortor vehicula porta. Cras tristique quam lacinia risus tincidunt, quis ullamcorper sem egestas. Suspendisse fringilla, turpis vitae hendrerit consectetur, tellus elit aliquam nibh, sed fermentum dui sem sit amet nisl. Aliquam vulputate lectus a nunc consequat, quis sagittis lectus sollicitudin. In scelerisque mattis gravida. Maecenas ut vestibulum tellus. Sed a elementum orci, ac imperdiet augue. Sed aliquet lorem augue, ut consequat augue iaculis eu. Nullam a purus eu lectus blandit mattis. Mauris vel odio leo. Pellentesque ut fringilla lorem. </p>
+</div>
+</body>
+</html>
